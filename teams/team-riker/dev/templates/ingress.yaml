@@ -49,3 +49,6 @@ spec:
             name: guestbook-ui
             port: 
               number: 80
+  tls:
+    - hosts:
+      - guestbook-ui.{{ .Values.spec.ingress.host }}

@@ -24,3 +24,6 @@ spec:
                 name: skiapp-service
                 port:
                   number: 80
+    tls:
+    - hosts:
+      - {{ .Values.spec.ingress.host }}
